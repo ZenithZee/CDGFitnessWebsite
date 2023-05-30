@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: transparent;
+}
+
+a {
+  color: white;
+}
+
+/* nav */
+
+.nav--container {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 60px 120px;
+  z-index: 999999;
+  width: 100%;
+}
+
+.nav--menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2em;
+}
+
+.nav--link {
+  position: relative;
+  font-size: 1.25em;
+  font-weight: bold;
+  transition: 0.3s ease;
+  letter-spacing: 2px;
+}
+
+.nav--link:hover {
+  color: red;
+}
+
+.nav--link::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: red;
+  transition: 0.3s ease;
+}
+
+.nav--link:hover::after {
+  left: 0;
+  width: 100%;
+}
+
+.mobile--menu {
+  display: none;
+  cursor: pointer;
+}
+
+.menu--bar {
+  display: block;
+  width: 30px;
+  height: 5px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background: white;
+}
+
+/* video */
+
+#home {
+  box-shadow: 0 0 100px 10px black inset;
+}
+#myVideo {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -9999;
+  filter: blur(1px);
+}
+
+.hero--overlay {
+  position: absolute;
+  left: 0;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  text-shadow: 0 2px 5px black;
+}
+
+.hero--overlay h1 {
+  font-size: 4rem;
+}
+
+.hero--overlay h2 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.overlay--button {
+  margin-top: 2em;
+  padding: 0.5em 2.5em 0.5em 2.5em;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: rgba(247, 16, 16);
+  border: 1px solid rgba(255, 195, 195, 0.5);
+  box-shadow: 0 2px 5px black;
+  color: white;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+/* parallax */
+.parallax--item {
+  background: url("/images/IMG_9988.jpg");
+  background-size: cover;
+  background-position-y: 20%;
+  background-attachment: fixed;
+  height: 30vh;
+  box-shadow: 0 0 15px 0px black inset;
+}
+
+.parallax--item2 {
+  background: url("/images/IMG_9989.jpg");
+  background-size: cover;
+  background-position-y: 70%;
+  background-attachment: fixed;
+  height: 30vh;
+  box-shadow: 0 0 15px 0px black inset;
+}
+
+.parallax--item3 {
+  background: url("/images/IMG_9990.jpg");
+  background-size: cover;
+  background-position-y: 30%;
+  background-attachment: fixed;
+  height: 30vh;
+  box-shadow: 0 0 15px 0px black inset;
+}
+
+/* about */
+.about--me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #262626;
+}
+.about--container {
+  display: flex;
+  color: white;
+}
+.contact-icon {
+  margin: 0.5em 0;
+}
+.contact-container {
+  margin: 0.5em 0;
+}
+/* training section */
+.training--section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #262626;
+  height: 100vh;
+  color: white;
+}
+
+/* contact */
+.contact--section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: #262626;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 2vh 4vw;
+  width: 90%;
+  max-width: 600px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0px 15px 5px rgb(19, 19, 19);
+}
+
+form input {
+  padding: 1em;
+  margin-bottom: 1em;
+  outline: none;
+}
+
+form textarea {
+  margin: 0;
+  padding: 3em 1em;
+  outline: none;
+  resize: none;
+  margin-bottom: 1em;
+}
+
+form button {
+  padding: 15px;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+}
+
+label {
+  margin: 1em 0 0.5em 0;
+  color: black;
+}
+
+@media screen and (max-width: 769px) {
+  .mobile--menu {
+    display: block;
+  }
+
+  .mobile--menu.active .menu--bar:nth-child(2) {
+    opacity: 0;
+  }
+  .mobile--menu.active .menu--bar:nth-child(1) {
+    transform: translateY(10px) rotate(405deg);
+  }
+
+  .mobile--menu.active .menu--bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-405deg);
+  }
+
+  /* nav menu */
+  .nav--container {
+    justify-content: flex-start;
+    padding: 1em;
+  }
+
+  .nav--menu {
+    position: fixed;
+    padding: 4em 0 1em 0;
+    top: -100%;
+    left: 0;
+    flex-direction: column;
+    background: #262626;
+    width: 100vw;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 1;
+  }
+
+  .nav--menu.active {
+    z-index: -1;
+    top: 0;
+  }
+  .nav--container.sticky {
+    z-index: 9999;
+    width: 100vw;
+    background: #1b1b1b;
+    transition: 0.5s;
+    padding: 1em;
+    box-shadow: 0 0 10px 1px black;
+  }
+
+  /* hero overlay */
+  .hero--overlay {
+    top: 40%;
+  }
+  .hero--overlay h1 {
+    font-size: 2.2rem;
+  }
+  .hero--overlay h2 {
+    font-size: 1.25rem;
+  }
+
+  .overlay--button:active {
+    background-color: rgb(102, 0, 0);
+    border: 1px solid rgba(110, 83, 83, 0.5);
+  }
+
+  /* parallax */
+  .parallax--item {
+    background-position-x: 60%;
+  }
+
+  .parallax--item2 {
+    background-position-x: 60%;
+  }
+  .parallax--item3 {
+    background-position-x: 60%;
+  }
+
+  /* about */
+  .about--me {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    padding: 1em;
+  }
+
+  .about--img {
+    display: none;
+  }
+
+  .about--container {
+    margin: 1em;
+    flex-direction: column;
+    text-align: center;
+  }
+  .about--container > h2 {
+    margin: 1em;
+  }
+  p {
+    margin: 0.1em 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .nav--container.sticky {
+    z-index: 9999;
+    width: 100vw;
+    background: #1b1b1b;
+    transition: 0.5s;
+    padding: 20px 40px;
+    box-shadow: 0 0 10px 1px black;
+  }
+
+  .hero--overlay {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    text-shadow: 0 2px 5px black;
+    margin-left: 4em;
+  }
+
+  .overlay--button:hover {
+    background-color: rgb(102, 0, 0);
+    border: 1px solid rgba(110, 83, 83, 0.5);
+  }
+
+  .about--container {
+    flex-direction: column;
+    flex: 0 40%;
+    padding: 1em;
+    gap: 2em;
+  }
+  .about--img {
+    height: 600px;
+    width: 400px;
+    object-fit: contain;
+  }
+}

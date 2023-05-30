@@ -1,0 +1,169 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Tilt+Warp&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christian Fitness Page</title>
+  </head>
+  <body>
+    <!-- nav -->
+    <header>
+      <nav id="nav" class="nav--container">
+        <div class="mobile--menu">
+          <span class="menu--bar"></span>
+          <span class="menu--bar"></span>
+          <span class="menu--bar"></span>
+        </div>
+
+        <ul class="nav--menu">
+          <li>
+            <a href="#home" class="nav--link" href="">Home</a>
+          </li>
+          <li>
+            <a href="#about--me" class="nav--link" href="">About Me</a>
+          </li>
+          <!-- <li><a href="#training" class="nav--link">Training</a></li> -->
+          <li>
+            <a href="#contact" class="nav--link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- hero -->
+    <section id="home">
+      <div>
+        <video autoplay muted loop id="myVideo">
+          <source src="/images/ChristianHero.mp4" type="video/mp4" />
+        </video>
+        <div class="hero--overlay">
+          <h1>Christian De Guzman</h1>
+          <h2>Powerlifting</h2>
+          <h2>Strength and Conditioning</h2>
+          <button class="overlay--button">
+            <a href="#contact">Contact</a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- parallax effect -->
+    <div class="parallax--item">
+      <div></div>
+    </div>
+
+    <!-- about -->
+    <section id="about--me" class="about--me">
+      <img class="about--img" src="/images/Christian1.jpg" />
+      <div class="about--container">
+        <h2>About me</h2>
+        <p>
+          I'm Christian de Guzman, a NASM certified trainer specializing in
+          strength training and powerlifting. My own transformation story is one
+          of incredible perseverance and dedication. Starting at 90 kilograms, I
+          embarked on a weight loss journey while simultaneously getting
+          stronger, ultimately reaching a lean and powerful 67.5 kilograms.
+          Along the way, I discovered my passion for powerlifting and competed
+          in several exhilarating competitions.
+        </p>
+        <p>
+          Through my personal experiences, I've gained a deep understanding of
+          the challenges and triumphs that come with achieving fitness goals. I
+          take joy in seeing myself break my own personal records at several
+          powerlifting meets. As a coach, I bring this firsthand knowledge to my
+          clients, both male and female, who have achieved remarkable progress
+          under my guidance. I've witnessed athletes break their own records and
+          make incredible strides towards their fitness aspirations.
+        </p>
+        <p>
+          My coaching approach is centered around providing personalized
+          training programs, tailored nutrition advice, and unwavering support.
+          I believe in fostering a positive and motivating environment where my
+          clients feel empowered to push their limits and redefine what they
+          thought was possible. Whether you're a beginner on a quest to improve
+          your strength or an experienced powerlifter aiming for new heights, I
+          am here to help you unlock your full potential. Join me on this
+          journey, and together, we'll exceed your expectations in the world of
+          strength training and powerlifting.
+        </p>
+        <div class="contact-container">
+          <p class="contact-icon">Instagram:</p>
+          <a
+            class="nav--link"
+            href="https://www.instagram.com/ninong67.5kg.kneecaps/"
+            ><i class="fa-brands fa-square-instagram fa-3x"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- parallax effect -->
+    <!-- <div class="parallax--item2">
+      <div></div>
+    </div>
+
+    <section id="training" class="training--section">
+      <div><h1>Training</h1></div>
+    </section> -->
+
+    <!-- parallax effect -->
+    <div class="parallax--item3">
+      <div></div>
+    </div>
+
+    <!-- contact -->
+    <section id="contact" class="contact--section">
+      <h1>Contact Me</h1>
+      <form>
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Name" name="name" required />
+        <label>Email</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Email"
+          name="email"
+          required
+        />
+        <label>Phone Number</label>
+        <input
+          type="text"
+          id="phone"
+          placeholder="Phone #"
+          name="number"
+          required
+        />
+        <label>Tell me about yourself</label>
+        <textarea
+          id="textarea"
+          placeholder="What is your current fitness experience, fitness goals, etc.  "
+          required
+          name="message"
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+  <script src="index.js"></script>
+</html>
