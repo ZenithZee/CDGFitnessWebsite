@@ -149,7 +149,7 @@ a {
 .parallax--item3 {
   background: url("/images/IMG_9990.jpg");
   background-size: cover;
-  background-position-y: 10%;
+  background-position-y: 30%;
   background-attachment: fixed;
   height: 30vh;
   box-shadow: 0 0 15px 0px black inset;
@@ -233,7 +233,7 @@ label {
   color: black;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .mobile--menu {
     display: block;
   }
@@ -299,6 +299,7 @@ label {
 
   /* parallax */
   .parallax--item {
+    background-position-y: 30%;
     background-position-x: 60%;
   }
 
@@ -306,6 +307,7 @@ label {
     background-position-x: 60%;
   }
   .parallax--item3 {
+    background-position-y: 30%;
     background-position-x: 60%;
   }
 
@@ -334,7 +336,7 @@ label {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .nav--container.sticky {
     z-index: 9999;
     width: 100vw;
