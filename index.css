@@ -149,7 +149,7 @@ a {
 .parallax--item3 {
   background: url("/images/IMG_9990.jpg");
   background-size: cover;
-  background-position-y: 30%;
+  background-position-y: 10%;
   background-attachment: fixed;
   height: 30vh;
   box-shadow: 0 0 15px 0px black inset;
