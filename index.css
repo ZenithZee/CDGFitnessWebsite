@@ -298,6 +298,13 @@ label {
   }
 
   /* parallax */
+  .parallax--item {
+    background-position-y: 90%;
+  }
+
+  .parallax--item3 {
+    background-position-y: 90%;
+  }
 
   /* about */
   .about--me {
