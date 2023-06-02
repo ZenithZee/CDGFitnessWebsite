@@ -298,18 +298,6 @@ label {
   }
 
   /* parallax */
-  .parallax--item {
-    background-position-y: 10%;
-    background-position-x: 60%;
-  }
-
-  .parallax--item2 {
-    background-position-x: 60%;
-  }
-  .parallax--item3 {
-    background-position-y: 10%;
-    background-position-x: 60%;
-  }
 
   /* about */
   .about--me {
