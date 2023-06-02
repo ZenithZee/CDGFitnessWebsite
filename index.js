@@ -6,7 +6,7 @@ mobileMenu.addEventListener("click", () => {
   mobileMenu.classList.toggle("active");
   navMenu.classList.toggle("active");
 });
-document.querySelectorAll(".nav--link").forEach(e =>
+document.querySelectorAll(".nav--link").forEach((e) =>
   e.addEventListener("click", () => {
     mobileMenu.classList.remove("active");
     navMenu.classList.remove("active");

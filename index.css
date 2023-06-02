@@ -93,6 +93,7 @@ a {
   object-fit: cover;
   z-index: -9999;
   filter: blur(1px);
+  position: relative;
 }
 
 .hero--overlay {
